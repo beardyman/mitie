@@ -5,13 +5,14 @@
       "sources": [
          "src/mitie.cc",
          "src/entity_extractor.cc",
-         "src/relation_extractor.cc",
+         "src/entity_trainer.cc",
+         "src/relation_extractor.cc"
       ],
       "cflags!": [ "-fno-exceptions" ],
       "cflags_cc!": [ "-fno-exceptions" ],
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
-        "/usr/local/include/mitie/",
+	"/opt/boxen/homebrew/include/mitie/"
         "mitie/dlib/"
       ],
       "link_settings": {
